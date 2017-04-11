@@ -10,6 +10,9 @@ public class Account {
     public void deposit(Integer amount) {
         this.balance +=  amount;
     }
+    public void withdrawal(Integer amount)  {
+        this.balance -= amount;
+    }
 
     public Integer getBalance() {
         return this.balance;
