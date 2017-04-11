@@ -8,15 +8,15 @@ public class Account {
     }
 
     public void deposit(Integer amount) {
-        this.balance +=  amount;
+        balance +=  amount;
     }
     public void withdrawal(Integer amount)  {
-        if (this.balance > amount) {
-            this.balance -= amount;
+        if (balance > amount) {
+            balance -= amount;
         }
     }
 
     public Integer getBalance() {
-        return this.balance;
+        return balance;
     }
 }
