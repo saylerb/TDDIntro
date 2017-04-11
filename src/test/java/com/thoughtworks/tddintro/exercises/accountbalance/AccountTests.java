@@ -8,20 +8,20 @@ import static org.junit.Assert.assertEquals;
 public class AccountTests {
     @Test
     public void shouldIncreaseMyBalanceWhenIDepositMoney(){
-        // Arrange
         Account account = new Account(100);
 
-        // Action
         account.deposit(50);
 
-        // Assert
         assertEquals(account.getBalance(), (Integer)150);
     }
 
     @Test
-    @Ignore  // Remove each @Ignore and implement test
     public void shouldDecreaseMyBalanceWhenIWithdrawMoney(){
+        Account account = new Account(100);
 
+        account.withdrawal(50);
+
+        assertEquals(account.getBalance(), (Integer)50);
     }
 
     @Test
