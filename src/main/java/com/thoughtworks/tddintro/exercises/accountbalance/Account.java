@@ -11,7 +11,9 @@ public class Account {
         this.balance +=  amount;
     }
     public void withdrawal(Integer amount)  {
-        this.balance -= amount;
+        if (this.balance > amount) {
+            this.balance -= amount;
+        }
     }
 
     public Integer getBalance() {
